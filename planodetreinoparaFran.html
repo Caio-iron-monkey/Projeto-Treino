@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Plano de Treino</title>
+</head>
+<body>
+  <header>
+    <img src="" alt="">
+    <h1>Bem vinda ao seu humilde plano de treino ! </h1>
+  </header>
+<!-- CARROSSEL DOS TREINOS -->
+  <div id="carrossel">
+    <h1 id="titulo-carrossel">Escolha Seu Treino de Hoje:</h1>
+
+    <!--DIVISÃO DOS CARDS-->
+    <img id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="icons/seta-esquerda.svg" alt="">
+    <img id="seta-direita" onclick="RolarParaDireita()" class="seta" src="icons/seta-direita.svg" alt="">
+          <div class="card" id="plano1">
+            <h1>Pernas e Ombros</h1>
+              <div class="img1">
+                <img src="img_treinos/pernas_treinos.jpg" width="100px" alt="">
+                <img src="img_treinos/ombros_treinos.jpg" width="100px" alt="">
+              </div>
+          </div>
+
+          <div class="card" id="plano2">
+            <h1>Costas e Triceps</h1>
+              <div class="img1">
+                <img src="img_treinos/costa_treinos.jpg" width="100px">
+                <img src="img_treinos/triceps_treinos.jpg"  width="100px" alt="">
+              </div>
+          </div>
+
+          <div class="card" id="plano3">
+            <h1>Peito e Biceps</h1>
+              <div class="img1">
+                <img src="img_treinos/peitoral_treinos.jpg" alt="" width="100px" >
+                <img src="img_treinos/biceps_treinos.jpg" alt="" width="100px">
+              </div>
+          </div>  
+    </div>
+  </section>
+  <script src="script.js"></script>  
+</body>
+</html>
