@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    background-color: rgb(14, 6, 15);
+    color: white;
+    font-family: oswald;
+    /* background-image: url(backgrounds/fundo-inicial1.jpg); */
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+section h2{
+    color:  rgb( 198, 125, 255);
+    font-size: 40px;
+    margin-bottom: 5px;
+    background-color: rgba(124, 43, 190, 0.445);
+    padding-bottom: 15px;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+#section-triceps{
+    margin-top: 20px;
+}
+    #subtitulo{
+        color: red;
+        margin: 0px;
+    }
+    section h3{
+        margin-bottom: 0px;
+    }
+    section p{
+        margin:8px 0px 50px 0px;
+    }
+    section #margin-nexdescricao{
+        margin-bottom: 0px;
+    }
+    section #b-red{
+        background-color: rgba(255, 0, 0, 0.541);
+        padding: 0px 5px 2px 5px;
+        border-radius: 7px;
+    }
+    section #b-titulo {
+        color: red;
+    }
