@@ -1,10 +1,12 @@
+@media only screen and (max-width: 600px){
+
+
 body{
     margin: 0px;
     background-color: rgb(14, 6, 15);
     color: white;
     font-family: oswald;
     background-image: url(backgrounds/fundo-inicial1.jpg);
-    
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -18,17 +20,43 @@ header{
     margin: 0px;
     padding-bottom: 20px;
     height: 120px;
+    margin-bottom: 100px;
 }
 #carrossel{
     text-align: center;
        
 }
-#carrossel #plano2{
-    display: none;
+#carrossel #plano1{
+    width: 100% ;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    background-color: rgba(124, 43, 190, 0.445) ;
+    border-radius: 10px;
+    padding-bottom: 23px;
+    margin-bottom: 10px;
+
 }
-#carrossel #plano3{
+#carrossel #plano2{
+    width: 100% ;
+    font-size: 10px;
     display: none;
-    
+    text-align: center;
+    background-color: rgba(35, 104, 157, 0.445) ;
+    border-radius: 10px;
+    padding-bottom: 23px;
+    margin-bottom: 10px;
+}
+
+#carrossel #plano3{
+    width: 100% ;
+    font-size: 10px;
+    display: none;
+    text-align: center;
+    background-color: rgba(255, 101, 178, 0.445) ;
+    border-radius: 10px;
+    padding-bottom: 23px;
+    margin-bottom: 10px;    
 }
 .seta{
     cursor: pointer;
@@ -43,22 +71,13 @@ header{
 #seta-esquerda{
     display: none;
 }
-
-#carrossel .card{
-    width: 100% ;
-    font-size: 10px;
-    display: block;
-    text-align: center;
-    background-color: rgba(124, 43, 190, 0.445) ;
-    
-    border-radius: 10px;
-    padding-bottom: 23px;
-    margin-bottom: 10px;
-
-}
     #titulo-carrossel{
         font-size: 25px;
         text-align: center;
+    }
+    .seta{
+        justify-content: space-around;
+        width: 40px;
     }
 
     #carrossel h1{
@@ -73,9 +92,20 @@ header{
         display: flex;
         justify-content: space-around;
     }
-
-#plano2{
-    background-color: black;
-    
+    #plano1:hover{
+        transform: translateY(-7px);
+        
+        box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
+        transition-duration: 0.5s;
+    }
+    #plano2:hover{
+        transform: translateY(-7px);
+        box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
+        transition-duration: 0.5s;
+    }
+    #plano3:hover{
+        transform: translateY(-7px);
+        box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
+        transition-duration: 0.5s;
+    }
 }
-
