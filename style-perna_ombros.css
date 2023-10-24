@@ -9,6 +9,13 @@ body{
     background-size: 100%;
 
 }
+
+.card-information{
+    display: none;
+    font-family: oswald;
+
+}
+
 section h2{
     color:  rgb( 198, 125, 255);
     font-size: 40px;
@@ -19,7 +26,7 @@ section h2{
     border-radius: 10px;
     
 }
-#section-triceps{
+#section-2{
     margin-top: 20px;
 }
     #subtitulo{

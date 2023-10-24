@@ -35,6 +35,7 @@ header{
     border-radius: 10px;
     padding-bottom: 23px;
     margin-bottom: 10px;
+    transition: 0,5s;
 
 }
 #carrossel #plano2{
@@ -46,6 +47,7 @@ header{
     border-radius: 10px;
     padding-bottom: 23px;
     margin-bottom: 10px;
+    transition: 0.5s;
 }
 
 #carrossel #plano3{
@@ -56,7 +58,8 @@ header{
     background-color: rgba(255, 101, 178, 0.445) ;
     border-radius: 10px;
     padding-bottom: 23px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    transition: 0.5s;  
 }
 .seta{
     cursor: pointer;
@@ -75,6 +78,10 @@ header{
         font-size: 25px;
         text-align: center;
     }
+    a{
+        text-decoration: none;
+        color: white;
+    }
     .seta{
         justify-content: space-around;
         width: 40px;
@@ -92,20 +99,22 @@ header{
         display: flex;
         justify-content: space-around;
     }
+
+/* ANIMAÇOES DE ELEMENTOS */
     #plano1:hover{
-        transform: translateY(-7px);
-        
+        transform: translateY(-10px);
         box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
         transition-duration: 0.5s;
     }
     #plano2:hover{
-        transform: translateY(-7px);
+        transform: translateY(-10px);
         box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
         transition-duration: 0.5s;
     }
     #plano3:hover{
-        transform: translateY(-7px);
+        transform: translateY(-10px);
         box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
         transition-duration: 0.5s;
     }
+    
 }

@@ -48,3 +48,11 @@ function RolarParaDireita2(){
     setaEsquerda2.style = "display:inline; text-align: center;"
     setaDireita.style = "display:inline;text-align: center;"
 }
+
+// FUNÇOES DOS CARDS DE INFORMAÇOES
+
+var cardInformacao = window.document.getElementsByClassName("card-information")
+
+function mostrarCardInformacao(){
+    cardInformacao.style = "display:block"
+}
