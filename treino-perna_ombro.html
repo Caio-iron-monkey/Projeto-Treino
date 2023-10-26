@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style-perna_ombros.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Perna e Ombro</title>
 </head>
 <body>
@@ -16,38 +17,70 @@
         <h3>1. Desenvolvimento Lateral com Halteres</h3>
             <img src="img/desenvolvimento_lateral.gif" width="250px" alt="">
             <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
-                <i class="fa-solid fa-circle-info" onclick="mostrarCardInformacao()"></i>
-                    <div class="card-information">
-                        <p> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
-                    </div>
-            
+            <button class="icon-information" onclick="openCard();"><i class="fa-solid fa-circle-info" ></i></button> 
+                <div class="card-information">
+                    <p class="info-card"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
         <h3>2. Elevação Frontal</h3>
         <img src="img/Elevacao-Frontal-com-.jpg" width="250px" alt="">
         <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
+            <button class="icon-information" onclick="openCard2();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information2">
+                    <p class="info-card2"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
+                
 
         <h3>3. Desenvolvimento Com Halteres</h3>
             <img src="img/desenvolvimento-ombros.jpg" width="250px" alt="">
             <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
+                <button class="icon-information" onclick="openCard3();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information3">
+                    <p class="info-card3"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
         <h2>Perna</h2>
+                <div id="perna-foco">
+                    <div id="divgluteos">
+                        <h4>Exercios com foco em Glúeteos</h4>
+                    </div>
+                    <div id="divforca">
+                        <h4>Exercios com foco em Força</h4>
+                    </div>
+                </div>
 <!-- EXERCICIOS DE PENA FOCO NO GLUTEO -->
         <div id="focogluteos">
             <h3>1. Agachamento</h3>
             <img src="img/agachamento-com-barra.gif" width="250px" alt="Agachamento">
             <p>Realizar 4 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard4();"><i class="fa-solid fa-circle-info" ></i></button>
+            <div class="card-information4">
+                <p class="info-card4"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+            </div>
 
             <h3>2. Búlgaro</h3>
             <img src="img/bulgaro.gif" width="250px" alt="Avanço">
             <p>Realizar 3 séries de 10-15 repetições com cada perna <br><b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard5();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information5">
+                    <p class="info-card5"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
             <h3>3. Abdutora "Para Gluteos"</h3>
             <img src= "img/abducao.gif" width="250px"  alt="Passada com Halteres">
 	        <p>3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard6();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information6">
+                    <p class="info-card6"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
             <h3>4. Agachamento sumo com carga</h3>
 	        <img src="img/agachamento-sumo.gif" width="250px"  alt="Agachamento com Peso">
             <p>3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard7();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information7">
+                    <p class="info-card7"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
             
 <!-- <h3>3. Levantamento terra</h3>
 <img src="img/levantamento-terra.gif" width="300px" alt="Levantamento terra">
@@ -56,6 +89,11 @@
             <h3>Elevação Pélvica</h3>
             <img src="img/Barbell-Hip-Thrust-elevacao-pelvica.gif" width="300px"  alt="Elevação Pélvica">
             <p>4 séries de 10 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard8();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information8">
+                    <p class="info-card8"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
+
         </div>
     </section>
 <!-- EXERCICIOS DE PERNA FOCO EM FORCA -->
@@ -64,25 +102,45 @@
             <h3>Leg Press</h3>
             <img src="img/leg_press.gif" width="250px" alt="">
             <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard9();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information9">
+                    <p class="info-card9"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
             <h3>Extensora</h3>
             <img src="img/extensora.gif" alt="" width="250px">
             <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard10();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information10">
+                    <p class="info-card10"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
             <h3>Adultora "Fechando"</h3>
             <img src="img/adultora.gif" alt="" width="250px">
             <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard11();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information11">
+                    <p class="info-card11"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
             <h3>Flexora</h3>
             <img src="img/flexora.gif" alt="" width="250px">
             <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard12();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information12">
+                    <p class="info-card12"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
             <h3>Panturrilha</h3>
             <img src="img/panturrilha.gif" alt="" width="250px">
             <p>Realizar 4 séries de 20 repetições <b id="b-red">carga máxima</b></p>
+            <button class="icon-information" onclick="openCard13();"><i class="fa-solid fa-circle-info" ></i></button>
+                <div class="card-information13">
+                    <p class="info-card13"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                </div>
 
         </div>
-        <script href="script.js"></script>
+        
     </section>
 </body>
 </html>

@@ -9,13 +9,59 @@ body{
     background-size: 100%;
 
 }
+
+.icon-information{
+    background-color:tomato ;
+    border-radius: 50%;
+    width: 16px;
+    padding: 1px;
+    border: none;
+    
+    
+    
+    
+    
+}
+.card-information, .card-information2, .card-information3, .card-information4, .card-information5, .card-information6, .card-information7, .card-information8, .card-information9, .card-information10, .card-information11, .card-information12, .card-information13{
+    background-color: tomato;
+    align-items: center;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    height: 90px;
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    
+    
+}
+.card-information{
+    height: 110px;
+}
+#info-card{
+        width: 100%;
+ }
+ .card-information2{
+    height: 157px;
+}
+#info-card2{
+        width: 100%;
+ }
+ .card-information3{
+    height: 157px;
+}
+#info-card3{
+        width: 100%;
+ }
+
 section h2{
     color:  rgb( 198, 125, 255);
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 38px;
+    letter-spacing: 10px;
+    margin: 40px 0px 5px 0px;
     background-color: rgba(124, 43, 190, 0.445);
-    padding-bottom: 15px;
-    height: 50px;
+    padding-bottom: 0px;
+    height: 60px;
     border-radius: 10px;
     
 }
@@ -30,11 +76,9 @@ section h2{
         margin-bottom: 0px;
     }
     section p{
-        margin:8px 0px 50px 0px;
+        margin:8px 0px 8px 0px;
     }
-    section #margin-nexdescricao{
-        margin-bottom: 0px;
-    }
+    
     section #b-red{
         background-color: rgba(255, 0, 0, 0.541);
         padding: 0px 5px 2px 5px;
@@ -55,3 +99,4 @@ section h2{
         padding: 0px 5px 2px 5px;
         border-radius: 7px;
     }
+    
