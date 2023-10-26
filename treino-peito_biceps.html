@@ -46,7 +46,7 @@
             <p>Realizar 3 séries de 10-12 repetições <b id="b-yellow">carga moderada</b></p>
             <button class="icon-information" onclick="openCard4();"><i class="fa-solid fa-circle-info" ></i></button>
             <div class="card-information4">
-                <p class="info-card4"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                <p class="info-card4"> Coloque a carga maxima em que consiga executar o exercios com perfeição <br>posicione um dos pé um passo a frente, segure as pegas de maneira que consiga encostar as partes inferiores uma a outra, inspire e puxe a carga soutando o ar, baixe a carga inspirando </p>
             </div>
     </section>
         
@@ -57,32 +57,45 @@
             <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
             <button class="icon-information" onclick="openCard5();"><i class="fa-solid fa-circle-info" ></i></button>
                 <div class="card-information5">
-                    <p class="info-card5"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                    <p class="info-card5">Foque em contrair braços ao tronco <br>
+                        inspirar e levantar carga alternadamente para o maximo externo, sem deixar de contrair os braços ao corpo, subir até a altura do peito</p>
                 </div>
 
             <h3>2. Rosca Concentrada</h3>
-            <img src="img/rosca-concentrada.gif" width="250px">
+            <img src="img/rosca-concentrada-unilateral.gif" width="250px">
             <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
             <button class="icon-information" onclick="openCard6();"><i class="fa-solid fa-circle-info" ></i></button>
                 <div class="card-information6">
-                    <p class="info-card6"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                    <p class="info-card6"> sentada, apoiar o cotovelo do braço a exercitar na coxa, e descer concentrando o movimento até o braço ficar levemente dobrado, em seguida subir com velocidade </p>
                 </div>
 
-            <h3>3. Rosca Scott</h3>
-            <img src="img/rosca-scott.gif"  width="250px" alt="rosca-scott">
-            <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga leve</b></p>
-            <button class="icon-information" onclick="openCard7();"><i class="fa-solid fa-circle-info" ></i></button>
-                <div class="card-information7">
-                    <p class="info-card7"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
-                </div>
+            <div id="rosca-scott">
+                <h3>3. Rosca Scott Normal ou Unilateral</h3>
+                <img id="setascottE" src="icons/seta-esquerda.svg" width="27px" alt="" onclick="voltarGifRoscaConc()">
+                <img id="setascottD" src="icons/seta-direita.svg" width="27px" alt="" onclick="mudarGifRoscaConc()">
+                <img id="rosca-scott1" src="img/rosca-scott.gif" width="250px" alt="rosca-scott" >
+                <img id="rosca-scott2" src="img/Rosca-Scott-unilateral.gif"  width="250px" alt="rosca-scott">
+                <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga leve</b></p>
+                <button class="icon-information" onclick="openCard7();"><i class="fa-solid fa-circle-info" ></i></button>
+                    <div class="card-information7">
+                        <p class="info-card7"> Recomendado fazer os dois braços em conjunto <br>
+                        apoie os braços no aparelho, inspire quando baixar a carca concentrando o exercio, em seguida subir em volocidade expirando</p>
+                    </div>
+            </div>
 
+                <div id="div-rosca-martelo">
             <h3>4. Rosca Martelo</h3>
-            <img src="img/rosca-martelo.gif"  width="250px" alt="rosca martelo">
+            <img src="icons/seta-esquerda.svg" id="setaEmartelo" width="27px" alt="" onclick="mudarGifMartelo()">
+            <img src="icons/seta-direita.svg" id="setaDmartelo" width="27px" alt="" onclick="voltarGifMartelo()">
+            <img src="img/rosca-martelo.gif"  id="martelo" width="250px" alt="rosca martelo">
+            <img src="img/rosca-martelo-sentado.gif" id="martelo-setado" width="250px" alt="martelo-setado">
             <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
             <button class="icon-information" onclick="openCard8();"><i class="fa-solid fa-circle-info" ></i></button>
                 <div class="card-information8">
-                    <p class="info-card8"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão periferica e ter os cotovelos ligeiramente dobrados</p>
+                    <p class="info-card8"> Sentada em um angulo de 45° <br>
+                    esticar os braços para baixo até ficar levemente flexonados, inspirar quando baixar a carga e inspirar quando subir, polegares sempre posicionados para fora <br><b>NÃO ESTICAR O BRAÇO !</b> </p>
                 </div>
+            </div>
     </section>
 </body>
 </html>

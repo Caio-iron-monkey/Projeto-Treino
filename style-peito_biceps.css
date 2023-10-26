@@ -10,17 +10,13 @@ body{
 
 }
 
+/* STYLES DOS CARDS DE INFO */
 .icon-information{
     background-color:tomato ;
     border-radius: 50%;
     width: 16px;
     padding: 1px;
-    border: none;
-    
-    
-    
-    
-    
+    border: none;  
 }
 .card-information, .card-information2, .card-information3, .card-information4, .card-information5, .card-information6, .card-information7, .card-information8, .card-information9, .card-information10, .card-information11, .card-information12, .card-information13{
     background-color: tomato;
@@ -53,6 +49,56 @@ body{
 #info-card3{
         width: 100%;
  }
+ .card-information4{
+    height: 157px;
+}
+#info-card4{
+        width: 100%;
+ }
+ .card-information5{
+    height: 110px;
+}
+#info-card5{
+        width: 100%;
+ }
+ .card-information6{
+    height: 110px;
+}
+#info-card6{
+        width: 100%;
+ }
+ .card-information7{
+    height: 110px;
+}
+#info-card7{
+        width: 100%;
+ }
+ .card-information8{
+    height: 155px;
+}
+#info-card8{
+        width: 100%;
+ }
+
+
+
+
+
+/* MUDANDO GIFS ROSCA SCOTT */
+#rosca-scott{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#setascottE{
+    display: none;
+}
+#rosca-scott1{
+    display: none;
+
+}
+
+/* DEMAIS ESTILOS SECTIONS... */
 
 section h2{
     color:  rgb( 198, 125, 255);

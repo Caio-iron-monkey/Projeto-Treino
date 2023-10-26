@@ -49,6 +49,27 @@ function RolarParaDireita2(){
     setaDireita.style = "display:inline;text-align: center;"
 }
 
+var gifscott1 = window.document.getElementById("rosca-scott1")
+var gifscott2 = window.document.getElementById("rosca-scott2")
+var setaDireitaScott = window.document.getElementById("setascottD")
+var setaEsquerdaScott = window.document.getElementById("setascottE")
+
+
+// MUDANDO GIFS ROSCA SCOTT
+function mudarGifRoscaConc(){
+    gifscott1.style = "display:none"
+    gifscott2.style = "display:inline"
+    setaDireitaScott.style = "display:none"
+    setaEsquerdaScott.style = "display:inline"
+
+}
+function voltarGifRoscaConc(){
+    gifscott1.style = "display:inline"
+    gifscott2.style = "display:none"
+    setaDireitaScott.style = "display:inline"
+    setaEsquerdaScott.style = "display:none"
+}
+
 // FUNÇOES DOS CARDS DE INFORMAÇOES
 
 const card =document.querySelector(".card-information");
