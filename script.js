@@ -89,8 +89,42 @@ function voltarGifMartelo(){
     setaEsqMartelo.style = "display:inline"
 }
 
-// FUNÇOES DOS CARDS DE INFORMAÇOES
 
+// FUNÇAO ABRIR E FECHAR VIDEO DE DEMONSTRAÇÃO DO EXERCICIO BÚLGARO
+var buttAbrirVideo = window.document.getElementById("videobulgaro")
+var videoBulgaro = window.document.getElementById("videobulgaro-aberto")
+var buttFecharVideo = window.document.getElementById("fechar-videobulgaro")
+
+function abrirVideoBulgaro(){
+    buttAbrirVideo.style = "display:none"
+    videoBulgaro.style = "display:flex"
+    buttFecharVideo.style = "display:flex"
+}
+function fecharVideoBulgaro(){
+    buttAbrirVideo.style = "display:inline"
+    videoBulgaro.style = "display:none"
+    buttFecharVideo.style = "display:none"
+}
+
+
+// FUNÇAO ABRIR E FECHAR VIDEO DE DEMONSTRAÇÃO DO EXERCICIO BÚLGARO
+var buttAbrirVideo = window.document.getElementById("videoabdutora")
+var videoBulgaro = window.document.getElementById("videoabdutora-aberto")
+var buttFecharVideo = window.document.getElementById("fechar-videoabdutora")
+
+function abrirVideoAbdutora(){
+    buttAbrirVideo.style = "display:none"
+    videoBulgaro.style = "display:flex"
+    buttFecharVideo.style = "display:flex"
+}
+function fecharVideoAbdutora(){
+    buttAbrirVideo.style = "display:inline"
+    videoBulgaro.style = "display:none"
+    buttFecharVideo.style = "display:none"
+}
+
+
+// FUNÇOES DOS CARDS DE INFORMAÇOES
 const card =document.querySelector(".card-information");
 
 const openCard = function(){
@@ -179,4 +213,10 @@ const card13 =document.querySelector(".card-information13");
 
 const openCard13 = function(){
     card13.style.display === "flex" ? card13.style.display = "none": card13.style.display ="flex";
+};
+
+const card14 =document.querySelector(".card-information14");
+
+const openCard14 = function(){
+    card14.style.display === "flex" ? card14.style.display = "none": card14.style.display ="flex";
 };

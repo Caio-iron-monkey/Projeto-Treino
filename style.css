@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px){
+
 
 
 body{
@@ -117,4 +117,122 @@ header{
         transition-duration: 0.5s;
     }
     
+@media only screen and (max-width: 600px){
+
+
+    body{
+        margin: 0px;
+        background-color: rgb(14, 6, 15);
+        color: white;
+        font-family: oswald;
+        background-image: url(backgrounds/fundo-inicial1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    
+    }
+    
+    header{
+        
+        font-size: 15px;
+        text-align: center;
+        color: rgb( 198, 125, 255);
+        margin: 0px;
+        padding-bottom: 20px;
+        height: 120px;
+        margin-bottom: 100px;
+    }
+    #carrossel{
+        text-align: center;
+           
+    }
+    #carrossel #plano1{
+        width: 100% ;
+        font-size: 10px;
+        display: block;
+        text-align: center;
+        background-color: rgba(124, 43, 190, 0.445) ;
+        border-radius: 10px;
+        padding-bottom: 23px;
+        margin-bottom: 10px;
+        transition: 0,5s;
+    
+    }
+    #carrossel #plano2{
+        width: 100% ;
+        font-size: 10px;
+        display: none;
+        text-align: center;
+        background-color: rgba(35, 104, 157, 0.445) ;
+        border-radius: 10px;
+        padding-bottom: 23px;
+        margin-bottom: 10px;
+        transition: 0.5s;
+    }
+    
+    #carrossel #plano3{
+        width: 100% ;
+        font-size: 10px;
+        display: none;
+        text-align: center;
+        background-color: rgba(211, 102, 187, 0.445) ;
+        border-radius: 10px;
+        padding-bottom: 23px;
+        margin-bottom: 10px;
+        transition: 0.5s;  
+    }
+    .seta{
+        cursor: pointer;
+        display:inline;
+    }
+    #seta-direita2{
+        display: none;
+    }
+    #seta-esquerda2{
+        display: inline;
+    }
+    #seta-esquerda{
+        display: none;
+    }
+        #titulo-carrossel{
+            font-size: 25px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .seta{
+            justify-content: space-around;
+            width: 40px;
+        }
+    
+        #carrossel h1{
+            margin: 5px 0px 10px 0px;
+    
+        }
+        #carrossel img{
+            border-radius: 20px;
+            
+        }
+        .img1{
+            display: flex;
+            justify-content: space-around;
+        }
+    
+    /* ANIMAÇOES DE ELEMENTOS */
+        #plano1:hover{
+            transform: translateY(-10px);
+            box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
+            transition-duration: 0.5s;
+        }
+        #plano2:hover{
+            transform: translateY(-10px);
+            box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
+            transition-duration: 0.5s;
+        }
+        #plano3:hover{
+            transform: translateY(-10px);
+            box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
+            transition-duration: 0.5s;
+        }
 }
