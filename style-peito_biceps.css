@@ -38,7 +38,7 @@ body{
         width: 100%;
  }
  .card-information2{
-    height: 157px;
+    height: 137px;
 }
 #info-card2{
         width: 100%;
@@ -90,12 +90,25 @@ body{
     flex-direction: column;
     align-items: center;
 }
-#setascottE{
+#setascottD{
     display: none;
 }
 #rosca-scott1{
     display: none;
 
+}
+
+/* MUDANDO GIFS ROSCA MARTELO */
+#setaDmartelo{
+    display: none;   
+}
+#martelo{
+    display:none
+}
+#div-rosca-martelo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* DEMAIS ESTILOS SECTIONS... */
@@ -104,7 +117,7 @@ section h2{
     color:  rgb( 198, 125, 255);
     font-size: 38px;
     letter-spacing: 10px;
-    margin: 40px 0px 5px 0px;
+    margin: 30px 0px 5px 0px;
     background-color: rgba(124, 43, 190, 0.445);
     padding-bottom: 0px;
     height: 60px;
@@ -145,4 +158,11 @@ section h2{
         padding: 0px 5px 2px 5px;
         border-radius: 7px;
     }
-    
+
+
+#home{
+    padding-top: 25px;
+}
+#home2{
+    margin: 25px 0px 25px 0px;
+}   

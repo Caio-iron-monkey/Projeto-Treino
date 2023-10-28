@@ -48,14 +48,13 @@ function RolarParaDireita2(){
     setaEsquerda2.style = "display:inline; text-align: center;"
     setaDireita.style = "display:inline;text-align: center;"
 }
+// MUDANDO GIFS ROSCA SCOTT
 
 var gifscott1 = window.document.getElementById("rosca-scott1")
 var gifscott2 = window.document.getElementById("rosca-scott2")
 var setaDireitaScott = window.document.getElementById("setascottD")
 var setaEsquerdaScott = window.document.getElementById("setascottE")
 
-
-// MUDANDO GIFS ROSCA SCOTT
 function mudarGifRoscaConc(){
     gifscott1.style = "display:none"
     gifscott2.style = "display:inline"
@@ -68,6 +67,26 @@ function voltarGifRoscaConc(){
     gifscott2.style = "display:none"
     setaDireitaScott.style = "display:inline"
     setaEsquerdaScott.style = "display:none"
+}
+
+// MUDANDO GIF ROSCA MARTELO
+
+var setaEsqMartelo = window.document.getElementById("setaEmartelo")
+var setaDirMartelo = window.document.getElementById("setaDmartelo")
+var marteloSentado = window.document.getElementById("martelo-setado")
+var marteloN = window.document.getElementById("martelo")
+
+function mudarGifMartelo(){
+    marteloSentado.style = "display:none"
+    marteloN.style = "display:inline"
+    setaDirMartelo.style = "display:inline"
+    setaEsqMartelo.style = "display:none"
+}
+function voltarGifMartelo(){
+    marteloN.style = "display:none"
+    marteloSentado.style = "display:inline"
+    setaDirMartelo.style = "display:none"
+    setaEsqMartelo.style = "display:inline"
 }
 
 // FUNÇOES DOS CARDS DE INFORMAÇOES
