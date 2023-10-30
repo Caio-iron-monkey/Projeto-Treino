@@ -91,35 +91,35 @@ function voltarGifMartelo(){
 
 
 // FUNÇAO ABRIR E FECHAR VIDEO DE DEMONSTRAÇÃO DO EXERCICIO BÚLGARO
-var buttAbrirVideo = window.document.getElementById("videobulgaro")
+var buttAbrirVideoBul = window.document.getElementById("videobulgaro")
 var videoBulgaro = window.document.getElementById("videobulgaro-aberto")
-var buttFecharVideo = window.document.getElementById("fechar-videobulgaro")
+var buttFecharVideoBul = window.document.getElementById("fechar-videobulgaro")
 
 function abrirVideoBulgaro(){
-    buttAbrirVideo.style = "display:none"
+    buttAbrirVideoBul.style = "display:none"
     videoBulgaro.style = "display:flex"
-    buttFecharVideo.style = "display:flex"
+    buttFecharVideoBul.style = "display:flex"
 }
 function fecharVideoBulgaro(){
-    buttAbrirVideo.style = "display:inline"
+    buttAbrirVideoBul.style = "display:inline"
     videoBulgaro.style = "display:none"
-    buttFecharVideo.style = "display:none"
+    buttFecharVideoBul.style = "display:none"
 }
 
 
-// FUNÇAO ABRIR E FECHAR VIDEO DE DEMONSTRAÇÃO DO EXERCICIO BÚLGARO
+// FUNÇAO ABRIR E FECHAR VIDEO DE DEMONSTRAÇÃO DO EXERCICIO ABDUTORA
 var buttAbrirVideo = window.document.getElementById("videoabdutora")
-var videoBulgaro = window.document.getElementById("videoabdutora-aberto")
+var videoAbdutora = window.document.getElementById("videoabdutora-aberto")
 var buttFecharVideo = window.document.getElementById("fechar-videoabdutora")
 
 function abrirVideoAbdutora(){
     buttAbrirVideo.style = "display:none"
-    videoBulgaro.style = "display:flex"
+    videoAbdutora.style = "display:flex"
     buttFecharVideo.style = "display:flex"
 }
 function fecharVideoAbdutora(){
     buttAbrirVideo.style = "display:inline"
-    videoBulgaro.style = "display:none"
+    videoAbdutora.style = "display:none"
     buttFecharVideo.style = "display:none"
 }
 
