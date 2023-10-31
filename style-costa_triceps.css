@@ -39,7 +39,25 @@ body{
     height: 230px;
 }
 .card-information3{
-    height: 285px;
+    height: 280px;
+}
+.card-information4{
+    height: 280px;
+}
+.card-information5{
+    height: 185px;
+}
+.card-information6{
+    height: 330px;
+}
+.card-information7{
+    height: 185px;
+}
+.card-information8{
+    height: 280px;
+}
+.card-information9{
+    height: 235px;
 }
 section h2{
     color:  rgb( 198, 125, 255);
@@ -79,6 +97,14 @@ section h2{
         padding: 0px 5px 2px 5px;
         border-radius: 7px;
     }
+#home{
+    padding-top: 25px;
+}
+#home2{
+    margin: 25px 0px 25px 0px;
+}
+
+/* ADD MEDIA QUERY (SEM NECESSIDADE !) */
 @media only screen and (max-width: 600px){
 *{
     margin: 0px;
@@ -101,12 +127,7 @@ body{
     border-radius: 50%;
     width: 16px;
     padding: 1px;
-    border: none;
-    
-    
-    
-    
-    
+    border: none;  
 }
 .card-information, .card-information2, .card-information3, .card-information4, .card-information5, .card-information6, .card-information7, .card-information8, .card-information9, .card-information10, .card-information11, .card-information12, .card-information13{
     background-color: tomato;
@@ -117,9 +138,34 @@ body{
     height: 90px;
     display: none;
     flex-direction: column;
-    margin: auto;
-    
-    
+    margin: auto;   
+}
+.card-information{
+    height: 330px;
+}
+.card-information2{
+    height: 230px;
+}
+.card-information3{
+    height: 280px;
+}
+.card-information4{
+    height: 280px;
+}
+.card-information5{
+    height: 185px;
+}
+.card-information6{
+    height: 330px;
+}
+.card-information7{
+    height: 185px;
+}
+.card-information8{
+    height: 280px;
+}
+.card-information9{
+    height: 235px;
 }
 
 section h2{
@@ -160,4 +206,10 @@ section h2{
         padding: 0px 5px 2px 5px;
         border-radius: 7px;
     }
+#home{
+    padding-top: 25px;
+}
+#home2{
+    margin: 25px 0px 25px 0px;
+}
 }
