@@ -20,7 +20,7 @@ input{
     font-size: 15px;
     border-radius: 5px;
 }
-button{
+#botao{
     background-color: dodgerblue;
     border: none;
     width: 100%;

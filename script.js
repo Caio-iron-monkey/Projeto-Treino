@@ -220,3 +220,20 @@ const card14 =document.querySelector(".card-information14");
 const openCard14 = function(){
     card14.style.display === "flex" ? card14.style.display = "none": card14.style.display ="flex";
 };
+
+// FUNCTION PARA LOGIN SIMPLES
+
+function logar(){
+        
+    var login = window.document.getElementById('login').value;
+    var senha = window.document.getElementById('senha').value;
+    
+
+    if (login == "Fran" && senha == "CaioTeAmo<3"){
+        alert('Hora de Treinar !');
+        location.href = "planodetreinoparaFran.html"
+
+    }else{
+        alert('Usuario ou senha incorretos');
+    }
+}
