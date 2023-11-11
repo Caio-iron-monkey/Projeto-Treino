@@ -103,6 +103,11 @@ section h2{
 #home2{
     margin: 25px 0px 25px 0px;
 }
+body a h4{
+    font-size: 9px;
+    margin-top: 5px;
+    
+ }
 
 /* ADD MEDIA QUERY (SEM NECESSIDADE !) */
 @media only screen and (max-width: 600px){
@@ -212,4 +217,9 @@ section h2{
 #home2{
     margin: 25px 0px 25px 0px;
 }
+body a h4{
+    font-size: 9px;
+    margin-top: 5px;
+    
+ }
 }

@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    background-color:rgb(14, 6, 15);
+    color: white;
+    font-family: oswald;
+    /* background-image: url(backgrounds/fundo-inicial1.jpg); */
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+.exercicio{
+    /* adicionar caracteristicas do card do exercicio */
+}
+.exercicio-escolhido{
+    box-shadow: 20px 20px,#76ff03;
+}

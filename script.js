@@ -237,3 +237,17 @@ function logar(){
         alert('Usuario ou senha incorretos');
     }
 }
+
+// FUNÇÃO PARA ESCOLHER EXERCICIOS.(estudos "setInterval")
+
+// Nessa função, a intenção é fazer com que os cards selecionados pelo usuario fique em evidencia em relação aos outros e logo em seguida seja submetido por outro botão em uma pag para q um treino com todos os exercicios selecionados apareção separadamente dos demais em opção.
+
+function alternarDestaque(){
+    var cardDestaque = document.getElementsByClassName("exercicio");
+    cardDestaque = array.from(cardDestaque)
+    
+    for(let i = 0; i < cardDestaque.length; i++){
+        cards[i].classList.toggle('exercicio-escolhido');
+    }
+}
+setInterval(alternarDestaque,1500);
