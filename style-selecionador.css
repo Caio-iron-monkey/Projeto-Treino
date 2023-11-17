@@ -14,7 +14,35 @@ body{
 
 }
 
+#divHeader h3 {
+    padding: 20px;
+}
 
+#divHeader h1{
+    margin: 20px 0px 0px;
+}
+.grupo-exercicio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.grupo-exercicio h3{
+    font-size: 9px;
+}
+h2{
+    font-size: 16px;
+}
+img {
+    border-radius: 10px;
+}
+
+#divperna{
+    display: flex;
+    flex-direction: row;
+    
+}
 .exercicio{
     /* adicionar caracteristicas do card do exercicio */
 }
