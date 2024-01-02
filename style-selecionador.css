@@ -13,20 +13,27 @@ body{
     background-size: 100%;
 
 }
-
-#divHeader h3 {
-    padding: 20px;
+#divHeader{
+    text-align: left;
+    padding-top: 20px;
+}
+#divHeader li {
+    font-size: 12.2px;
+    padding: 8px;
+}
+#b-green{
+    color: #73ff03;
+}
+header #b-red{
+    color: red;
 }
 
-#divHeader h1{
-    margin: 20px 0px 0px;
-}
 .grupo-exercicio{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 30px;
+    padding:8px 0px 8px 0px;
 }
 .grupo-exercicio h3{
     font-size: 9px;
@@ -36,16 +43,219 @@ h2{
 }
 img {
     border-radius: 10px;
+
 }
 
 #divperna{
     display: flex;
     flex-direction: row;
-    
+
 }
 .exercicio{
-    /* adicionar caracteristicas do card do exercicio */
+    border-radius: 5px;
+    border:none;
+    
 }
 .exercicio-escolhido{
-    box-shadow: 20px 20px,#76ff03;
+    box-shadow: 2px 2px 8px  #73ff03;
+    border: solid 3px #73ff03;
 }
+
+
+/* ------------------------------------------EDIÇÃO DOS CARDS VERMELHOS INFO------------------------------- */
+
+
+.icon-information{
+    background-color:tomato ;
+    border-radius: 50%;
+    width: 16px;
+    padding: 1px;
+    border: none;
+}
+.card-information,.card-information1, .card-information2, .card-information3, .card-information4, .card-information5, .card-information6, .card-information7, .card-information8, .card-information9, .card-information10, .card-information11, .card-information12,.card-information13, .card-information14,.card-information15, .card-information16, .card-information17, .card-information18, .card-information19, .card-information20, .card-information21, .card-information22, .card-information23, .card-information24, .card-information25, .card-information26, .card-information27, .card-information28, .card-information29, .card-information30, .card-information31{
+
+    background-color: tomato;
+    align-items: center;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    
+    display: none;
+    flex-direction: column;
+    margin: auto;
+
+    /* display: inline-block;
+    padding: 10px; */
+}
+
+
+/* INTERAÇOES EM IMAGENS PEITO/BICEPS */
+/* MUDANDO GIFS ROSCA SCOTT */
+#rosca-scott{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#setascottD{
+    display: none;
+}
+#rosca-scott1{
+    display: none;
+
+}
+
+/* MUDANDO GIFS ROSCA MARTELO */
+#setaDmartelo{
+    display: none;   
+}
+#martelo{
+    display:none
+}
+#div-rosca-martelo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INTERAÇOES EM VIDEOS TREINO PERNA/OMBROS */
+
+/* EDIÇÃO PARA VER VID BULGARO */
+#videobulgaro-aberto{
+    display: none;
+}
+#videobulgaro{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: oswald;
+    margin: 10px 0px 15px 0px;
+}
+#fechar-videobulgaro{
+    width: 100%;
+    display: none;
+    justify-content: end;
+    
+}
+
+/* EDIÇÃO PARA VER VID ABDUTORA */
+#videoabdutora-aberto{
+    display: none;
+}
+#videoabdutora{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: oswald;
+    margin: 10px 0px 15px 0px;
+}
+#fechar-videoabdutora{
+    width: 100%;
+    display: none;
+    justify-content: end;
+    
+}
+
+/*-------------------------- DIVs COM TODOS OS CONTEUDOS DOS TREINOS--------------------------------- */
+#geraltreinos{
+    display:none ;
+}
+.divstreinos{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -----------TODOS OS TIRULOS ----------------*/
+
+.titulotreinos{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -----------INPUT ABRIR SELEÇÃO------------- */
+
+#inputabrirselecao{
+    font-family: oswald;
+    width: 40%;
+    height: 25px;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 15px;
+    padding-bottom:3px ;
+    font-weight: bold;
+    border: none;
+    margin: 10px 0px 20px 0px;
+    transform: translateY(-7px);
+    transition: 2s;
+}
+
+/* ----------------------EDIÇÃO SITE TOTAL----------------- */
+
+section h2{
+    
+    color:  rgb( 198, 125, 255);
+    font-size: 25px;
+    letter-spacing: 0px;
+    margin: 10px 0px 5px 0px;
+    background-color: rgba(124, 43, 190, 0.445);
+    padding-bottom: 0px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+#section-2{
+    margin-top: 20px;
+}
+    #subtitulo{
+        color: red;
+        margin: 0px;
+    }
+    section h3{
+        margin-top: 0px;
+    }
+    section p{
+        margin:8px 0px 8px 0px;
+    } 
+
+    section #b-red{
+        background-color: rgba(255, 0, 0, 0.541);
+        padding: 0px 5px 2px 5px;
+        border-radius: 7px;
+    }
+    section #b-titulo {
+        color: red;
+    }
+    section #b-yellow{
+        background-color: rgba(255, 255, 0, 0.541);
+        padding: 0px 5px 2px 5px;
+        border-radius: 7px;
+    }
+    section #b-grean{
+        background-color: rgba(0, 128, 0, 0.541);
+        padding: 0px 5px 2px 5px;
+        border-radius: 7px;
+    }
+    
+    /* #divmax-peito h2,#divmax-biceps h2,#divmax-costa h2,#divmax-triceps h2,#divmax-ombro h2,#divmax-perna h2{
+        
+    } */
+#hometreino{
+    padding-top: 25px;
+}
+#divgeraltreinos #homesec{
+    text-decoration: none;
+    margin: 025px 0px 25px 0px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#backtop{
+    margin: 025px 0px 25px 0px;
+}
+body a h4{
+    font-size: 9px;
+    margin-top: 5px;
+
+ }

@@ -9,19 +9,28 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style-selecionador.css">
+
     <title>Seleção de Exercícios</title>
 </head>
 
-<body>
-
+<body >
+    <div id="geralsuperior">
+        <a href="planodetreinoparaFran.html"><i class="fa-solid fa-house" style="color: #ffffff;" id="hometreino"><br>
+        
+            <h4>voltar</h4>
+        </i></a><br>
+        
     <header>
         <div id="divHeader">
-            <h1>Esta sem tempo hoje ?</h1>
-            <h3>Selecione os Exercícios que você deseja fazer e monte seu proprio treino !</h2>
+           <ul>
+            <li>1. Clique duas vezes em cima da imagem do exercicio para <b id="b-green">seleciona-lo.</b></li>
+            <li>2. Após a seleção, clique em abrir seleção que iremos renderizar seu treino.</li>
+            <li>3. Para <b id="b-red">excluir</b> um treino da seleção, basta clicar em cima do mesmo uma vez</li>
+           </ul>
         </div>
     </header>
 
-    <section>
+    <section id="cardsselecao">
 
         <!--------------------------------- EXERCÍCIOS PEITO E BICEPS -------------------------------------->
 
@@ -31,22 +40,22 @@
 
             <div class="grupo-exercicio">
 
-                <div>
+                <div class="exercicio" onclick="closeCard()" ondblclick='alternarDestaque()'>
                     <h3>Flexão de braço</h3>
                     <img src="img/peito/flexao_de_bracos.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard1()" ondblclick='alternarDestaque1()'>
                     <h3>Supino reto</h3>
                     <img src="img/peito/supino_reto.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard2()" ondblclick='alternarDestaque2()'>
                     <h3>Supino inclinado</h3>
                     <img src="img/peito/supino_inclinado.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard3()" ondblclick='alternarDestaque3()'>
                     <h3>Crucifixo</h3>
                     <img src="img/peito/crucifixo.gif" width="60px" alt="">
                 </div>
@@ -58,22 +67,22 @@
             <h2>Exercícios para Bíceps</h2>
             <div class="grupo-exercicio">
 
-                <div>
+                <div class="exercicio" onclick="closeCard4()" ondblclick='alternarDestaque4()'>
                     <h3>Rosca Direta</h3>
                     <img src="img/biceps/rosca-direta.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard5()" ondblclick='alternarDestaque5()'>
                     <h3>Rosca Concentrada</h3>
                     <img src="img/biceps/rosca-concentrada-unilateral.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard6()" ondblclick='alternarDestaque6()'>
                     <h3>Rosca Scott</h3>
                     <img src="img/biceps/rosca-scott.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard7()" ondblclick='alternarDestaque7()'>
                     <h3>Rosca Martelo</h3>
                     <img src="img/biceps/rosca-martelo-sentado.gif" width="60px" alt="">
                 </div>
@@ -87,22 +96,22 @@
             <h2>Exercícios para Costa</h2>
             <div class="grupo-exercicio">
 
-                <div>
+                <div class="exercicio" onclick="closeCard8()" ondblclick="alternarDestaque8()">
                     <h3>Remada Sentada</h3>
                     <img src="img/costas/remada-sentado.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard9()" ondblclick="alternarDestaque9()">
                     <h3>Remada com barra</h3>
                     <img src="img/costas/remada-curvada.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard10()" ondblclick="alternarDestaque10()">
                     <h3>Pull-down</h3>
                     <img src="img/costas/pull_down.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard11()" ondblclick="alternarDestaque11()">
                     <h3>Puxada no Pulley</h3>
                     <img src="img/costas/puxada-no-pulley.gif" width="60px" alt="">
                 </div>
@@ -114,27 +123,27 @@
             <h2>Exercícios para Tríceps</h2>
             <div class="grupo-exercicio">
 
-                <div>
+                <div class="exercicio" onclick="closeCard12()" ondblclick="alternarDestaque12()">
                     <h3>Triceps no banco</h3>
                     <img src="img/triceps/triceps-no-banco.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard13()" ondblclick="alternarDestaque13()">
                     <h3>Triceps Deitada</h3>
                     <img src="img/triceps/rosca-triceps-testa-deitado-com-barra-w.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard14()" ondblclick="alternarDestaque14()">
                     <h3>Puxada no Pulley</h3>
                     <img src="img/triceps/puxada-no-pulley-baixo.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard15()" ondblclick="alternarDestaque15()">
                     <h3>Tríceps Francês</h3>
                     <img src="img/triceps/frances-unilateral.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard16()" ondblclick="alternarDestaque16()">
                     <h3>Pux. Franc. no Pulley</h3>
                     <img src="img/triceps/triceps-no-pulley.gif" width="60px" alt="">
                 </div>
@@ -145,25 +154,25 @@
 
         <!-- EXERCICIOS DE OMBRO -->
         <div id="divmax-ombro">
-            <h2>Exercícios para Ombors</h2>
+            <h2>Exercícios para Ombros</h2>
             <div class="grupo-exercicio">
 
-                <div>
+                <div class="exercicio" onclick="closeCard17()" ondblclick='alternarDestaque17()'>
                     <h3>Desen. Lateral</h3>
                     <img src="img/ombros/desenvolvimento_lateral.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard18()" ondblclick='alternarDestaque18()'>
                     <h3>Elevação Frontal</h3>
                     <img src="img/ombros/Elevacao-Frontal-com-.jpg" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard19()" ondblclick='alternarDestaque19()'>
                     <h3>Desen. Com Halt.</h3>
                     <img src="img/ombros/desenvolvimento-ombros.jpg" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard20()" ondblclick='alternarDestaque20()'>
                     <h3>Rem Com Halt.</h3>
                     <img src="img/ombros/Remada-alta.gif" width="60px" alt="">
                 </div>
@@ -176,60 +185,61 @@
             <h2>Exercícios para Perna</h2>
             <div class="grupo-exercicio">
 
-                <div>
+                <div class="exercicio" onclick="closeCard21()" ondblclick='alternarDestaque21()'>
                     <h3>Agachamento</h3>
                     <img src="img/perna/agachamento-com-barra.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard22()" ondblclick='alternarDestaque22()'>
                     <h3>Búlgaro</h3>
                     <img src="img/perna/bulgaro.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard23()" ondblclick='alternarDestaque23()'>
                     <h3>Abdutora</h3>
                     <img src="img/perna/abducao.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard24()" ondblclick='alternarDestaque24()'>
                     <h3>Agachamen sumo</h3>
                     <img src="img/perna/agachamento-sumo.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard25()" ondblclick='alternarDestaque25()'>
                     <h3>Elevação Pélvica</h3>
                     <img src="img/perna/Barbell-Hip-Thrust-elevacao-pelvica.gif" width="60px" alt="">
                 </div>
 
                 <!-- EXERCICIOS PARA PERNA COM FOCO EM GLÚTEOS -->
-                <div>
+                <div class="exercicio" onclick="closeCard26()" ondblclick='alternarDestaque26()'>
                     <h3>Leg Press</h3>
                     <img src="img/perna/leg_press.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard27()" ondblclick='alternarDestaque27()'>
                     <h3>Extensora</h3>
                     <img src="img/perna/extensora.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard28()" ondblclick='alternarDestaque28()'>
                     <h3>Adultora</h3>
                     <img src="img/perna/adultora.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard29()" ondblclick='alternarDestaque29()'>
                     <h3>Flexora</h3>
                     <img src="img/perna/flexora.gif" width="60px" alt="">
                 </div>
 
-                <div>
+                <div class="exercicio" onclick="closeCard30()" ondblclick='alternarDestaque30()'>
                     <h3>Panturrilha</h3>
                     <img src="img/perna/panturrilha.gif" width="60px" alt="">
                 </div>
             </div>
         </div>
+        <input type="button" value="Abrir Seleção" id="inputabrirselecao" onclick="abrirSelecao();selecionarAlgum();opeCloHome()">
     </section>
-
+</div>
     <footer>
         <!-- ADICIONAR TEMPO ESTIMADO POR EXERCICIO SOMADOS ( TEMPO TOTAL DE TREINO ) + MENSAGEM MOTIVACIONAL -->
 
@@ -237,7 +247,521 @@
 
     <!-- NO FUTURO SERIA INTESSANTE ADICIONAR OPÇÃO DE O USUARIO DETERMINAR QUANTO TEMPO TEM PARA FAZER UM TREINO, QUAL TREINO TEM PREFERENCIA DE FAZER E EM SEGUIDA O PROPRIO SITE TE DA UMA OPÇÃO DE TREINO CERTA COM OUTRAS SECUNDARIAS OPCIONAIS PROXIMAS AO TEMPO ESTIMADO -->
 
-    <script href="script.js"></script>
+    <div id="geraltreinos">
+        <a href=""><i class="fa-solid fa-house" style="color: #ffffff;" id="homesec"><br>
+            <h4>voltar</h4>
+            </i></a>
+
+    <!-- --------------------------------------TREINO PEITO E BICEPS ---------------------------------->
+        <section id="section-1">
+            <h2 class="titulotreinos">Peito</h2>
+                <div class="divstreinos">
+                <h3>1. Flexão de braço</h3>
+                <img src="img/peito/flexao_de_bracos.gif" width="250px" alt="Flexão de braço">
+                <p>Realizar 3 séries de 10-15 repetições</p>
+                <button class="icon-information" onclick="openCard();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information">
+                    <p class="info-card"> Contrair bem os glúteos e abdomen é essencial;<br>
+                        Mantenha os pés juntos, e as mãos levemente mais afastadas do que a largura dos ombros,inspirar
+                        quando descer e expirar quando subir. </p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>2. Supino reto</h3>
+                <img src="img/peito/supino_reto.gif" width="250px" alt="Supino reto">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information" onclick="openCard2();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information2">
+                    <p class="info-card2"> <b>ACONSELHÁVEL SUPERVISÃO!</b><br>
+                        imagine que tenha que esmagar o meio da barra forçando suas extremidades por onde está
+                        segurando; inspirando, baixe a barra em direçõo ao meio do peito, e suba soltando o ár com força
+                        total.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>3. Supino inclinado</h3>
+                <img src="img/peito/supino_inclinado.gif" width="250px">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-grean">carga baixa</b></p>
+                <button class="icon-information" onclick="openCard3();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information3">
+                    <p class="info-card3">Com o banco em um angulo de 45° <br>
+                        Mantenha o foco em deixar seus cotovelos alinhados ao peito, inspirando, baixe a carga em
+                        direção ao alinhamento do peito, em seguida levante a carga com força em direção ao alinhamento
+                        do maxilar expirando.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>4. Crucifixo em pé na polia</h3>
+                <img src="img/peito/crucifixo.gif" width="250px" alt="Crucifixo">
+                <p>Realizar 3 séries de 10-12 repetições <b id="b-yellow">carga moderada</b></p>
+                <button class="icon-information" onclick="openCard4();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information4">
+                    <p class="info-card4"> Coloque a carga máxima em que consiga executar o exercios com perfeição
+                        <br>posicione um dos pés um passo a frente, segure as pegas de maneira que consiga aproximar
+                        suas mãos ao maximo, inspire e puxe a carga soutando o ar, baixe a carga inspirando. <br>
+                        o ideal é que após cada série troque o pé que estava a frente.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="section-4">
+            
+            <h2 class="titulotreinos">Biceps</h2>
+                <div class="divstreinos">
+                <h3>1. Rosca Direta</h3>
+                <img src="img/biceps/rosca-direta.gif" width="250px" alt="Rosca Direta">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information" onclick="openCard5();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information5">
+                    <p class="info-card5">Foque em contrair braços ao tronco <br>
+                        inspirar e levante a carga alternadamente para o máximo externo, sem deixar de contrair os
+                        braços ao corpo, subir até a altura do peito.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>2. Rosca Concentrada</h3>
+                <img src="img/biceps/rosca-concentrada-unilateral.gif" width="250px">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information" onclick="openCard6();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information6">
+                    <p class="info-card6"> Sentada, apoiar o cotovelo do braço a exercitar na coxa, descer inspirando
+                        concentrando o movimento até o braço ficar levemente dobrado, em seguida subir com velocidade
+                        expirando. </p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <div id="rosca-scott">
+                    <h3>3. Rosca Scott Normal ou Unilateral</h3>
+                    <img id="setascottE" src="icons/seta-esquerda.svg" width="27px" alt=""
+                        onclick="voltarGifRoscaConc()">
+                    <img id="setascottD" src="icons/seta-direita.svg" width="27px" alt="" onclick="mudarGifRoscaConc()">
+                    <img id="rosca-scott1" src="img/biceps/rosca-scott.gif" width="250px" alt="rosca-scott">
+                    <img id="rosca-scott2" src="img/biceps/Rosca-Scott-unilateral.gif" width="250px" alt="rosca-scott">
+                    <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
+                    <button class="icon-information" onclick="openCard7();" ><i class="fa-solid fa-circle-info"></i></button>
+                    <div class="card-information7">
+                        <p class="info-card7"> Recomendado fazer os dois braços em conjunto <br>
+                            apoie os braços no aparelho, inspire quando baixar a carca concentrando o exercício, em
+                            seguida subir em volocidade expirando.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>4. Rosca Martelo</h3>
+                <div id="div-rosca-martelo">
+                    <img src="icons/seta-esquerda.svg" id="setaEmartelo" width="27px" alt=""
+                        onclick="mudarGifMartelo()">
+                    <img src="icons/seta-direita.svg" id="setaDmartelo" width="27px" alt=""
+                        onclick="voltarGifMartelo()">
+                    <img src="img/biceps/rosca-martelo.gif" id="martelo" width="250px" alt="rosca martelo">
+                    <img src="img/biceps/rosca-martelo-sentado.gif" id="martelo-setado" width="250px"
+                        alt="martelo-setado">
+                </div>
+                <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information" onclick="openCard8();" ><i class="fa-solid fa-circle-info"></i></i></button>
+                <div class="card-information8">
+                    <p class="info-card8"> Sentada em um angulo de 45° <br>
+                        Esticar os braços para baixo até ficar levemente flexonados, inspirar quando baixar a carga e
+                        expirar quando subir. <br><b>NÃO ESTICAR O BRAÇO !</b> </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-3">
+            <h2 class="titulotreinos" >Costas</h2>
+                <div class="divstreinos">
+                <h3>1. Remada Sentada</h3>
+                <img src="img/costas/remada-sentado.gif" width="250px" alt="Barra fixa">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information"  onclick="openCard9();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information9">
+                    <p class="info-card9"> Escolha uma carga desafiadora mas que não atrapalhe a execução perfeita do
+                        exercício. <br>
+                        Sente-se no aparelho apoiando seus pés mas não estique suas pernas por completo, <br> imagine
+                        que tenha que espremer uma laranja imaginaria que está no centro das suas costas, com os braços
+                        esticados, inspire fundo e traga a carga em direção ao torax na intenção de esmagar a suposta
+                        laranja em suas costas, <br> puxando também em seguida a carga com os braços até que suas mãos
+                        estejam encostadas ao estômago, expire e relaxe primeiro os braços para só então relaxar as
+                        costas por completo inspirando.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>2. Remada com barra</h3>
+                <img src="img/costas/remada-curvada.gif" width="250px" alt="Remada com barra">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-yellow">carga moderada</b></p>
+                <button class="icon-information"  onclick="openCard10();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information10">
+                    <p class="info-card10"> Nesse exercício devemos ter uma maior atenção na lombar. <br>
+                        Escolha uma carga em que não sinta uma pressão na lombar ao executar o exercício;<br>
+                        devidamente posicionada como na imagem a cima, comece o exercício com a carga nos joelhos,
+                        inspire fundo e deslize a carga pela sua coxa a puxando para cima expirando,em seguida baixe
+                        lentamente inspirando.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>3. Pull-down </h3>
+                <img src="img/costas/pull_down.gif" width="250px" alt="Pull-down com corda">
+                <p>Realizar 3 séries de 10-15 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information"  onclick="openCard11();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information11">
+                    <p class="info-card11"> Selecione uma carga desafiadora mas que não impossibilite de fazer o
+                        exercício com perfeição. <br>
+                        Sente de maneira confortavel e trave seus joelhos nas travas a sua frente da maquina. <br>
+                        Após travar a carga de maneira que consiga puxar a barra sentada, respire fundo e traga a barra
+                        até a parte superior do peito expirando, <br> focando em baixar os cotovelos trabalhando sua
+                        dorsal e não forçando a carga com os punhos, <br>em seguida libere a carga concentrando o
+                        movimento e inspirando. </p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>4. Puxada no Pulley <br>
+                    <h4 id="subtitulo">"usar pegas, nao triangulo"</h4>
+                </h3>
+                <img src="img/costas/puxada-no-pulley.gif" width="250px" alt="puxada-no-pulley">
+                <p>Realizar 3 séries de 10-12 <b id="b-red">carga maxima</b></p>
+                <button class="icon-information"  onclick="openCard12();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information12">
+                    <p class="info-card12"> Selecione uma carga desafiadora mas que nao te impossibilite de fazer o
+                        exercicio com perfeição. <br>
+                        Sente de maneira confortavel e trave seus joelhos nas travas a sua frente na maquina. <br>
+                        Após travar a carga de maneira que consiga puxar as pegas sentada, inspire e traga as pegas até
+                        a parte superior do peito expirando, <br> focando em baixar os cotovelos trabalhando sua dorsal
+                        e não forçando a carga com os punhos, <br>em seguida libere a carga concentrando o movimento e
+                        inspirando.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-2">
+            <h2 class="titulotreinos">Triceps</h2>
+                <div class="divstreinos">
+                <h3>1. Triceps no banco</h3>
+                <img src="img/triceps/triceps-no-banco.gif" width="250px" alt="triceps no banco">
+                <p id="margin-nexdescricao">Realizar 3 séries de 8-12 repetições
+                <p><b id="b-red">ir até o cotovelo ficar na linha do ombro</b></p>
+                </p>
+                <button class="icon-information"  onclick="openCard13();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information13">
+                    <p class="info-card13"> Escolha um banco, sente e apoie suas mãos de maneira seu quadril esteja fora
+                        do banco e que consiga suportar todo o peso do seu tronco nessa posição, mergulhe devagar
+                        somente seu quadril inspirando, mas não deixe que toque ao chão, levante seu proprio peso usando
+                        somente seus braços e expirando </p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>2. Triceps Deitada <b id="b-titulo">com Barra W</b></h3>
+                <img src="img/triceps/rosca-triceps-testa-deitado-com-barra-w.gif" width="250px" alt="Barra fixa">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-yellow">carga moderada</b></p>
+                <button class="icon-information"  onclick="openCard14();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information14">
+                    <p class="info-card14"> Em uma barra W, escolha uma carga que ative bem os triceps, porém, que não
+                        crie possíveis riscos no exercicio. <br>
+                        Deitada no banco, levante a barra W como se fosse fazer um supino e em seguida, incline a carga
+                        até que ela ultrapasse uma linha imaginaria vertical partindo da sua testa. <br>
+                        Com os braços travados nessa posição, baixe suavimente somente seus antebraços com a carga
+                        inspirando, depois com os braços imoveis, levante a carga expirando usando somente os antebraços
+                        novamente com velocidade até que seus braços estejam quase esticados; repita o processo. </p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>3. Puxada no Pulley</h3>
+                <img src="img/triceps/puxada-no-pulley-baixo.gif" width="250px" alt="Barra fixa">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information"  onclick="openCard15();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information15">
+                    <p class="info-card15"> Após selecionar uma carga desafiadora mas que não atrapalhe a execução do
+                        exercício, foque em manter seus braços imoveis colados ao corpo. <br>
+                        Segure a barra com firmeza e mova a carga para baixo expirando, em seguida deixe que a carga
+                        volte a sua posição inicial mas concentrando o movimento inspirando.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>4. Tríceps Francês Unilateral</h3>
+                <img src="img/triceps/frances-unilateral.gif" width="250px" alt="Barra fixa">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information"  onclick="openCard16();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information16">
+                    <p class="info-card16"> Esse exercício também pode ser executado com as duas mãos e um halter, porém
+                        com um peso superior. <br>
+                        Após selecionar uma boa carga, posicione o halter atrás da cabeça e imagine que tenha que
+                        empunhar uma espada guardada nas suas costas, levante a carga até acima da cabeça expirando, em
+                        seguida volte com o halter para a posição inicial mas concentrando o movimento baixando devagar.
+                        <br>
+                        Não é necessario levantar mais do que acima da cabeça.
+                    </p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>5. Puxada Francêsa no Pulley</h3>
+                <img src="img/triceps/triceps-no-pulley.gif" width="250px" alt="Barra fixa">
+                <p>Realizar 3 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                <button class="icon-information" onclick="openCard17();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information17">
+                    <p class="info-card17"> Após selecionar uma carga que te desafie mas também não atrapalhe na execução
+                        do exercício, posicione as cordas atrás da cabeça e seus cotovelos para cima como nas imagens
+                        acima, <b>foque em deixar seus braços erguidos e imóveis</b> <br> puxe a corda até acima da
+                        cabeça expirando, em seguida deixe que o peso volte para sua posição inicial mas concentrando o
+                        movimento. <br></p>
+                </div>
+            </div>
+
+        </section>
+
+        <!----------------------------------TREINO PERNA E OMBRO ------------------------------------------>
+
+        <section id="section-5">
+            
+            <h2 class="titulotreinos">Ombros</h2>
+                <div class="divstreinos">
+                <h3>1. Desenvolvimento Lateral com Halteres</h3>
+                <img src="img/ombros/desenvolvimento_lateral.gif" width="250px" alt="">
+                <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
+                <button class="icon-information" onclick="openCard18();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information18">
+                    <p class="info-card18"> Levantar os braços de forma que consiga ver os dois antebraços com sua visão
+                        periferica, mantenha os cotovelos ligeiramente dobrados <br> inspire e levante os braços
+                        expirando, mantenha os braços ao alto por 1s e em seguida baixe concentrando o movimento e
+                        inspirando novamente.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>2. Elevação Frontal</h3>
+                <img src="img/ombros/Elevacao-Frontal-com-.jpg" width="250px" alt="">
+                <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
+                <button class="icon-information" onclick="openCard19();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information19">
+                    <p class="info-card19"> O ideal é que use uma barra ou pega que possibilite o movimento com as mãos
+                        proximas e as palmas voltadas para baixo <br>
+                        Posicionar os pés numa distancia da largura dos ombros, mantenha a postura e olhe fixamente para
+                        frente, inspire e levante a carga até a altura do pescoço com os braços esticados expirando o
+                        ar.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>3. Desenvolvimento Com Halteres</h3>
+                <img src="img/ombros/desenvolvimento-ombros.jpg" width="250px" alt="">
+                <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
+                <button class="icon-information" onclick="openCard20();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information20">
+                    <p class="info-card20"> Segurar halteres ao lado da cabeça na largura dos ombros e focar em manter os
+                        cotovelos ligeiramente a frente <br>
+                        inspirar e levantar a carga para cima expirando, em seguida baixe a carga para a posição inicial
+                        inspirando.</p>
+                </div>
+            </div>
+            <div class="divstreinos">
+                <h3>4. Remada Alta Com Halteres</h3>
+                <img src="img/ombros/Remada-alta.gif" width="250px" alt="">
+                <p>Realizar 3 séries de 10-12 repetições <b id="b-grean">carga baixa</b></p>
+                <button class="icon-information" onclick="openCard21();" ><i class="fa-solid fa-circle-info"></i></button>
+                <div class="card-information21">
+                    <p class="info-card21"> Mantenha a postura e olhe fixamente para frente, afaste os pés na largura
+                        dos ombros <br>
+                        com os halteres posicionados a frente do corpo, inspire e levante a carca até a altura do peito
+                        expirando o ar, mantenha a carga por 1s e baixe concentrando o movimento e inspirando.
+                    </p>
+                </div>
+            </div>
+
+            
+
+            <!-- EXERCICIOS DE PENA FOCO NO GLUTEO -->
+            <h2 class="titulotreinos">Perna</h2>
+                <div class="divstreinos">
+                <div id="focogluteos">
+                    <h3>1. Agachamento</h3>
+                    <img src="img/perna/agachamento-com-barra.gif" width="250px" alt="Agachamento">
+                    <p>Realizar 4 séries de 8-12 repetições <b id="b-red">carga máxima</b></p>
+                    <button class="icon-information" onclick="openCard22();" ><i class="fa-solid fa-circle-info"></i></button>
+                    <div class="card-information22">
+                        <p class="info-card22"> 1. Posicione seus pé ligeiramente mais abertos que a largura dos ombros e
+                            a barra nos trapesios de maneira que a carga esteja bem diividida entre os dois lados. <br>
+                            2. Mantenha o olhar sempre para frente, inspire e ative seu core. <br>
+                            3. Execute o agachamento sem inclinar seu tronco para frente demasiadamente ou arquear a
+                            lombrar.
+                            4. Suba com a carga expirando o ar, foque nos seus joelhos para que não faça uma rotação
+                            orizontal para o interior ou exterior não natural. </p>
+                    </div>
+                </div>
+            </div>    
+                <div class="divstreinos">
+                    <h3>2. Búlgaro</h3>
+                    <img src="img/perna/bulgaro.gif" width="250px" alt="bulgaro">
+                    <p>Realizar 3 séries de 10-15 repetições com cada perna <br><b id="b-red">carga máxima</b></p>
+                    <button class="icon-information" onclick="openCard23();" ><i class="fa-solid fa-circle-info"></i></button>
+                    <div class="card-information23">
+                        <p class="info-card23"> Se posicionar conforme o video abaixo faz toda a diferença ! <br>
+                            posicione o pé corretamente, sempre apontados para frente, variar sempre entre perna <b>Dir
+                            </b>e <b>Esq</b> para dar descanso a perna treinada anteriormente. O tempo de descanço entre
+                            series deve ser minimo. <br>
+                            <b>Esse é um exercicio de longa duração, não intercale ele com qualquer outro entre cada
+                                serie, foque em fazer somente esse.</b>
+                        </p>
+                    </div>
+                    <div><button id="videobulgaro" onclick="abrirVideoBulgaro()" ondblclick='closeCard28()'><i class="fa-solid fa-eye"
+                                style="color: #ffffff;"></i> <br> Ver posicionamento correto para Búlgaro</button></div>
+                    <div id="fechar-videobulgaro" onclick="fecharVideoBulgaro()" ondblclick='closeCard29()'><i class="fa-solid fa-xmark"
+                            style="color: #ffffff;"></i></div>
+                    <iframe id="videobulgaro-aberto" width="360" height="617"
+                        src="https://www.youtube.com/embed/xQsBCNvNpaE"
+                        title="AGACHAMENTO BÚLGARO - DISTANCIA DO BANCO." frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="divstreinos">
+                    <h3>3. Abdutora "Para Gluteos"</h3>
+                    <img src="img/perna/abducao.gif" width="250px" alt="Passada com Halteres">
+                    <p>3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+                    <button class="icon-information" onclick="openCard24();" ><i class="fa-solid fa-circle-info"></i></button>
+                    <div class="card-information24">
+                        <p class="info-card24"> Tudo oque você precisa saber sobre esse exercicio esta no video abaixo.
+                        </p>
+                    </div>
+                    <div><button id="videoabdutora" onclick="abrirVideoAbdutora()"><i class="fa-solid fa-eye"
+                                style="color: #ffffff;"></i> <br> Ver video explicativo para Abdutora</button></div>
+                    <div id="fechar-videoabdutora" onclick="fecharVideoAbdutora()"><i class="fa-solid fa-xmark"
+                            style="color: #ffffff;"></i>
+                    </div>
+                    <iframe id="videoabdutora-aberto" width="360" height="617"
+                        src="https://www.youtube.com/embed/rI_8g_hBQBI" title="Foco no glúteo na cadeira abdutora"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="divstreinos">
+                    <h3>4. Agachamento sumo com carga</h3>
+                    <img src="img/perna/agachamento-sumo.gif" width="250px" alt="Agachamento com Peso">
+                    <p>3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+                    <button class="icon-information" onclick="openCard25();" ><i class="fa-solid fa-circle-info"></i></button>
+                    <div class="card-information25">
+                        <p class="info-card25"> Para executar esse exercicio com perfeição a postura é indispensável !
+                            <br>
+                            Usar carga maxima em qualquer exercicio de glúeteo <b>é essencial</b>, no entanto, <b>a
+                                postura torna o exercício efetivo e previne lesões</b>, então escolhar uma carga máxima
+                            na qual consigar fazer o exercício com uma boa postura e movimentos concentrados. <br>
+                            Com a carga predefinida, escolha uma plataforma que possa proporcionar a execução do
+                            movimento a fundo com os braços esticados e o troco ereto sem que a carga toque o chão,
+                            baixe ao maximo inspirando, levante com a carga expirando o ár olhando sempre para frente.
+                        </p>
+                    </div>
+                </div>
+                <div class="divstreinos">
+                    <h3>Elevação Pélvica</h3>
+                    <img src="img/perna/Barbell-Hip-Thrust-elevacao-pelvica.gif" width="300px" alt="Elevação Pélvica">
+                    <p>4 séries de 10 repetições <b id="b-red">carga máxima</b></p>
+                    <button class="icon-information" onclick="openCard26();" ><i class="fa-solid fa-circle-info"></i></button>
+                    <div class="card-information26">
+                        <p class="info-card26"> Para que esse exercício seja efetivo é importante usar a combinação de
+                            carga maxima possível e movimentos concentrados. <br>
+                            <b>O USO DE UMA PROTEÇÃO NA PELVE <br> É INDISPENSÁVEL</b> <br>
+                            com o auxilio de um banco e com a carga predefinida , inspire e levante o quadril empurrando
+                            os calcanhares e expirando, mantenha a carga por 1s no ár e em seguida baixe o quadril
+                            inspirando novamente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <h3>3. Levantamento terra</h3>
+<img src="img/levantamento-terra.gif" width="300px" alt="Levantamento terra">
+<p>Realizar 4 séries de 8-12 repetições com carga máxima</p> -->
+
+                <section id="section-6">
+                    <!-- EXERCICIOS DE PERNA FOCO EM FORCA -->
+                    <div class="divstreinos">
+                        <div id="focoforca">
+                            <h3>Leg Press</h3>
+                            <img src="img/perna/leg_press.gif" width="250px" alt="">
+                            <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+                            <button class="icon-information" onclick="openCard27();" ><i class="fa-solid fa-circle-info"></i></button>
+                            <div class="card-information27">
+                                <p class="info-card27"> Com uma boa carga predefinida, posicione seus pés na largura dos
+                                    ombros na plataforma, inspire e empure a carga com força total expirando o ar,
+                                    <b>nunca
+                                        esticar as pernas por completo</b>, em seguida baixe a carga de maneira
+                                    concentrada
+                                    inspirando com a maior ampliturde possível.</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="divstreinos">
+                            <h3>Extensora</h3>
+                            <img src="img/perna/extensora.gif" alt="" width="250px">
+                            <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+                            <button class="icon-information" onclick="openCard28();" ><i class="fa-solid fa-circle-info"></i></button>
+                            <div class="card-information28">
+                                <p class="info-card28"> Selecione uma boa carga e sente no aparelho de maneira que os
+                                    glúteos e toda a extensão da coxa até o joelho estejam apoiadas pelo banco. <br>
+                                    inspire e levante a carga com força expirando o ar, em seguida baixe a carga de
+                                    maneira
+                                    concentrada inspirando ; a sequencia e a velocidade com que você faz esse exercicio
+                                    na
+                                    fase concentrica <b>(levantando)</b> sendo ela rápida e na fase excentrica
+                                    <b>(baixando)</b> devagar, vai ditar os seus melhores resultados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="divstreinos">
+                            <h3>Adultora "Fechando"</h3>
+                            <img src="img/perna/adultora.gif" alt="" width="250px">
+                            <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+                            <button class="icon-information" onclick="openCard29();" ><i class="fa-solid fa-circle-info"></i></button>
+                            <div class="card-information29">
+                                <p class="info-card29"> A carga para cada um varia muito de pessoa pra pessoa nesse
+                                    exercicio, o ideal é escolher uma carga que force ao maximo o músculo mas com
+                                    responsabilidade. <br>
+                                    Localize a pegas das mãos, inspire fundo e feche os joelhos com calma expirando o
+                                    ár,
+                                    mantenha a cagar por 1s e em seguida afaste os joelhos concentrando o movimento.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="divstreinos">
+                            <h3>Flexora</h3>
+                            <img src="img/perna/flexora.gif" alt="" width="250px">
+                            <p>Realizar 3 séries de 10-12 repetições <b id="b-red">carga máxima</b></p>
+                            <button class="icon-information" onclick="openCard30();" ><i class="fa-solid fa-circle-info"></i></button>
+                            <div class="card-information30">
+                                <p class="info-card30"> Para a execução desse exercicio há uma infinidade de
+                                    aparelhos.<br>
+                                    Na posição disponivel do aparelho, procure uma carga que vai ativar os musculos
+                                    posteriores da coxa ou musculos isquiotibiais, procure uma execução com volocidade e
+                                    força na fase concentrica <b>(levantando a carga)</b> e calma e concentração na fase
+                                    excentrica <br><b>(baixando a carga).</b></p>
+                            </div>
+                        </div>
+                        <div class="divstreinos">
+                            <h3>Panturrilha</h3>
+                            <img src="img/perna/panturrilha.gif" alt="" width="250px">
+                            <p>Realizar 4 séries de 15 repetições <b id="b-red">carga máxima</b></p>
+                            <button class="icon-information" onclick="openCard31();" ><i class="fa-solid fa-circle-info"></i></button>
+                            <div class="card-information31">
+                                <p class="info-card31"> A panturrilha é um musculo bastante forte e de recuperação
+                                    rápida,
+                                    então para ganhos consideráveis nesse musculo, apostar em treinos <b>diarios</b> de
+                                    intensidade moderada seria a melhor opção. <br>
+                                    Com a apllicação de carga, o seu equilíbrio será comprometido, procure um peso que
+                                    te
+                                    ajude a se equilíbrar melhor. <br>
+                                    Escolha um local em que consiga apoiar todo o seu peso na parte frontal dos pés e
+                                    mantenha seu pé em uma postura linear como se estivesse em pé normalmente. <br>
+                                    O exercício consiste em levantar e baixar seu proprio peso juntamente com uma carga
+                                    máxima predefinida que não atrapalhe a exercução das repetições necessárias listadas
+                                    acima. <br>
+                                    <b>NUNCA BAIXAR SEU CALCANHAR ABAIXO DA POSIÇÃO NATURAL DOS SEUS PÉS.</b>
+                                </p>
+                            </div>
+                        </div>
+
+                </section>
+
+                <a href="#hometreino" id="backtop"><i class="fa-solid fa-arrow-up-long" style="color: #ffffff;" >
+                    <h4>voltar ao topo</h4>
+                    </i></a>
+    </div>
+            <script type="text/javascript" src="script.js" defer></script>
+            <script src="script.js"></script>
 </body>
 
 </html>
